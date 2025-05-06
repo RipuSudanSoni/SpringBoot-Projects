@@ -1,0 +1,13 @@
+package com.example.my.exception.entity;
+
+import org.springframework.cache.support.AbstractCacheManager;
+
+public class Employee {
+	
+	private int id;
+	private String empName;
+	private double sal;
+	private int age;
+	private String gender;
+
+}

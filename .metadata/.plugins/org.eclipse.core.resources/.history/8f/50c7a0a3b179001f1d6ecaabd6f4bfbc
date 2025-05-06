@@ -1,0 +1,26 @@
+package demo;
+import java.util.Scanner;
+
+public class Condition {
+
+	    public static void main(String[] args) {
+	        // Create a Scanner object to take input from the user
+	        Scanner scanner = new Scanner(System.in);
+	        
+	        // Prompt the user to enter a number
+	        System.out.print("Enter a number: ");
+	        int n = scanner.nextInt();
+	        
+	        // Initialize sum to 0
+	        int sum = 0;
+	        
+	        // Using a for loop to calculate the sum of numbers from 1 to n
+	        for (int i = 1; i <= n; i++) {
+	            sum += i;  // Add the current value of i to sum
+	        }
+	        
+	        // Print the sum
+	        System.out.println("The sum of numbers from 1 to " + n + " is: " + sum);
+	        
+	    }
+}

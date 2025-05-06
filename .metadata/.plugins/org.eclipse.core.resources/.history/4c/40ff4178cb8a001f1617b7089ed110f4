@@ -1,0 +1,5 @@
+package com.example.postgresql.config;
+
+public class PostgreSqlConfig {
+
+}

@@ -1,0 +1,20 @@
+package com.example.my.exception.service;
+import org.springframework.stereotype.Service;
+import com.example.my.exception.entity.Employee;
+import java.util.*;
+
+
+
+@Service
+public class EmpService {
+
+	List<Employee> empList = new ArrayList<>(Arrays.asList(
+			new Employee(101, "Ankit", 35000, 24, "M"),
+			new Employee(102, "Mohit", 33450, 22, "M"),
+			new Employee(103, "Radha", 45000, 25, "F")));
+	
+	
+	public Employee getEmpById(int id) {
+		
+	}
+}

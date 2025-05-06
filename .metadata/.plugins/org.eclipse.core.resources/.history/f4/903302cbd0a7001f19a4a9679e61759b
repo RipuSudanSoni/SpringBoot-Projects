@@ -1,0 +1,12 @@
+package Comprable_Comprator;
+
+public class Emp {
+	
+	private int id;
+	private String name;
+	private int age;
+	
+	
+	
+
+}

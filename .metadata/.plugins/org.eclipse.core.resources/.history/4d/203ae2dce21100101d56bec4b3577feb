@@ -1,0 +1,20 @@
+package com.example.Tesing.project.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("api/v1")
+public class QuestionController {
+
+	
+	
+	
+
+//	@PostMapping("/check/data")
+//	public int getDetails(@RequestBody User user) {
+//		int response = userService.checkUser(user);
+//		return response;
+//	}
+	
+}

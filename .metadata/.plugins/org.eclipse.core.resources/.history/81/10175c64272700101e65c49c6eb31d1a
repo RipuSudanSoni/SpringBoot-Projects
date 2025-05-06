@@ -1,0 +1,5 @@
+package com.example.my.exception.entity;
+
+public class Employee {
+
+}

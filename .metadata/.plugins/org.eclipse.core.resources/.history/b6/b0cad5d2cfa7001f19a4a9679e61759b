@@ -1,0 +1,20 @@
+package Comprable_Comprator;
+
+import java.util.*;
+
+public class Main {
+	public static void main(String args[]) {
+		List<Integer>list = new ArrayList<>();
+		Integer arr[] = {3,5,6,7,8,9};
+		List<Integer>list2 = Arrays.asList(arr);
+		list.add(5);
+		list.add(6);
+		System.out.println("Array = "+Arrays.toString(arr));
+		Arrays.sort(arr);
+		System.out.println("Sorted Array = "+Arrays.toString(arr));
+		System.out.println("List = "+list);
+		System.out.println("List2 = "+list2);
+		
+	}
+
+}

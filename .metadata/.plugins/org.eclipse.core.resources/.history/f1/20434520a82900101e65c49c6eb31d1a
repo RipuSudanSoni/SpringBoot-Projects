@@ -1,0 +1,11 @@
+package com.example.my.exception.errorResponse;
+
+import javax.management.loading.PrivateClassLoader;
+
+public class ApiResponse<T> {
+	
+	private int statusCode;
+	private String message;
+	private T data; 
+
+}

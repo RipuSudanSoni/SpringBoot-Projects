@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;DSA.My_STACK_Impl&apos; to &apos;STACK_Impl&apos;&#x0D;&#x0A;- Original project: &apos;Prectice Java Code&apos;&#x0D;&#x0A;- Original element: &apos;DSA.My_STACK_Impl&apos;&#x0D;&#x0A;- Renamed element: &apos;DSA.STACK_Impl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;My_STACK_Impl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;DSA{My_STACK_Impl.java[My_STACK_Impl" matchStrategy="1" name="STACK_Impl" qualified="false" references="true" similarDeclarations="false" stamp="1735385795473" textual="false" version="1.0"/>
+</session>
