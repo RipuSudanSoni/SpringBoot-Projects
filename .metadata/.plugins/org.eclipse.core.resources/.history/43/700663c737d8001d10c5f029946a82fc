@@ -1,0 +1,59 @@
+package service;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lcwd.user.service.entity.User;
+
+import entity.Employee;
+import exception.ResourseNotFoundException;
+import repository.EmployeeRepo;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService{
+	
+	@Autowired
+	private EmployeeRepo employeeRepo;
+
+	private Logger logger = LoggerFactory.getLogger(EmployeeServiceImpl.class);
+	
+	@Override
+	public Employee createUser(Employee employee) {
+		Employee savedEmployee = employeeRepo.save(employee);
+		return savedEmployee;
+	}
+
+	@Override
+	public Employee getUser(Long id) {
+		Employee employee = employeeRepo.findById(id).orElseThrow(() -> new ResourseNotFoundException("Employee Not found with id : "+id));
+		logger.info("Employee detais{} of  id{}",employee,id);
+		return employee;
+	}
+
+	@Override
+	public List<Employee> getAllUser() {
+		List<Employee> allEmp = employeeRepo.findAll();
+		logger.info("List of Employee {}",allEmp);
+		return allEmp;
+	}
+
+	@Override
+	public Employee updateEmployee(Employee employee, Long id) {
+		Employee preEmp = employeeRepo.findById(id).orElseThrow(() -> new ResourseNotFoundException("Employee Not found with id : "+id));
+		preEmp.setEmpName(employee.getEmpName());
+		preEmp.setEmail(employee.getEmail());
+		preEmp.setRole(employee.getRole());
+		return employeeRepo.save(preEmp);
+	}
+
+	@Override
+	public String deleteEmployee(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

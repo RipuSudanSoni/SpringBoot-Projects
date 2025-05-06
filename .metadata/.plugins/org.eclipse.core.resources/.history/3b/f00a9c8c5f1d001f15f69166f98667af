@@ -1,0 +1,13 @@
+package com.example.user_hotel_ratings_Project;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class UserHotelRatingsProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UserHotelRatingsProjectApplication.class, args);
+	}
+
+}

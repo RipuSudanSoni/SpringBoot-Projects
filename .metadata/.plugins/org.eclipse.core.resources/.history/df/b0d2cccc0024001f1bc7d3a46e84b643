@@ -1,0 +1,8 @@
+package com.example.UserService.Exceptions;
+
+public class ResourceNotFounfException extends RuntimeException{
+
+	ResourceNotFounfException() {
+		super("Resouce not Found on server !!");
+	}
+}

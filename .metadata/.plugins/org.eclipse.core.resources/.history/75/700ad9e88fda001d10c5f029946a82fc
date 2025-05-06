@@ -1,0 +1,23 @@
+package Response;
+
+import lombok.Data;
+
+@Data
+public class LoginResponse {
+	
+	private String message;
+	private boolean status;
+	
+	
+	public LoginResponse() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public LoginResponse(String message, boolean status) {
+		super();
+		this.message = message;
+		this.status = status;
+	}
+	
+}

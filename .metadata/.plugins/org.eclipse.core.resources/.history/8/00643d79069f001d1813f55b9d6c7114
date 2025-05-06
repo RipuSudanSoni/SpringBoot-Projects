@@ -1,0 +1,4 @@
+spring.security.user.name=Ripu
+spring.security.user.password=ripu@123
+
+server.port = 8082

@@ -1,0 +1,12 @@
+package com.rest.api.exam.security;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.springframework.*;
+
+import org.springframework.stereotype.Component;
+
+@Component
+class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
+   
+ }

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;WelcomeController.java&apos; to &apos;SpringSecurityProject/src/main/java/com.ashokit.controller&apos;&#x0D;&#x0A;- Original project: &apos;SpringSecurityProject&apos;&#x0D;&#x0A;- Destination element: &apos;SpringSecurityProject/src/main/java/com.ashokit.controller&apos;&#x0D;&#x0A;- Original element: &apos;com.ashokit.WelcomeController.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ashokit.controller" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ashokit{WelcomeController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1674924456146" units="1" version="1.0"/>
+</session>

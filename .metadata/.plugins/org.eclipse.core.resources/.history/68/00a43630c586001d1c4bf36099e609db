@@ -1,0 +1,10 @@
+package com.rest.api.exam.security;
+
+import org.springframework.security.web.;
+
+import org.springframework.stereotype.Component;
+
+@Component
+class AwtAuthenticationEntryPoint implements AuthenticationEntryPoint{
+   
+ }

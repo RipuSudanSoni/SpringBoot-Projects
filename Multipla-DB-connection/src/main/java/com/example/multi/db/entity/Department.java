@@ -1,0 +1,6 @@
+package com.example.multi.db.entity;
+
+public class Department {
+	
+
+}

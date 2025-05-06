@@ -1,0 +1,15 @@
+package com.quize.service.quize.seevice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.quize.service.quize.seevice.service.QuizeService;
+
+@RestController
+public class QuizController {
+
+	
+	@Autowired
+	private QuizeService quizeService;
+	
+}

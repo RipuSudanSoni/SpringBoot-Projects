@@ -1,0 +1,25 @@
+package com.rest.api.myjunit.serviceTest;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.rest.api.myjunit.entity.Customer;
+import com.rest.api.myjunit.repository.CustomerRepo;
+import com.rest.api.myjunit.service.CustomerService;
+
+@ExtendWith(MockitoExtension.class)
+public class CustomerServiceTest {
+	
+	@Mock
+	private CustomerRepo customerRepo;
+
+	private CustomerService customerService;
+	
+	@BeforeEach
+	void setUp() {
+		this.customerService = new CustomerService(this.customerRepo);
+	}
+	
+}

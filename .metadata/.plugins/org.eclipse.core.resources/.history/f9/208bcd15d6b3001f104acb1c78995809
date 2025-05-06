@@ -1,0 +1,22 @@
+package com.quize.service.quize.seevice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.quize.service.quize.seevice.entities.Quiz;
+import com.quize.service.quize.seevice.service.QuizeService;
+
+@RestController
+public class QuizController {
+
+	
+	@Autowired
+	private QuizeService quizeService;
+	
+	@PostMapping("/save")
+	public Quiz saveQuiz(@RequestBody Quiz quiz) {
+		return quizeService.saveQuiz(quiz);
+	}
+}

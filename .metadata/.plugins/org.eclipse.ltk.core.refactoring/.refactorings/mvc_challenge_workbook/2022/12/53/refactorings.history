@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mvc_challenge_workbook/src/main/resources/templates/show.html&apos; to &apos;records.html&apos;" description="Rename resource &apos;show.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/show.html" name="records.html" stamp="1672318870043" updateReferences="true"/>
+</session>

@@ -1,0 +1,37 @@
+package com.example.UserService.Services.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.UserService.Entity.User;
+import com.example.UserService.Repositories.UserRepo;
+import com.example.UserService.Services.UserService;
+
+
+@Service
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private UserRepo userRepo;
+
+	@Override
+	public User createUser(User user) {
+		User userResponseUser =  userRepo.save(user);
+		return userResponseUser;
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User getUserById(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

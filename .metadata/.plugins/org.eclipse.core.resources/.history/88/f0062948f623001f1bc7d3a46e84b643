@@ -1,0 +1,10 @@
+package com.example.UserService.Services;
+
+import com.example.UserService.Entity.User;
+
+public interface UserService {
+	
+	//create
+	User createUser(User user);
+
+}

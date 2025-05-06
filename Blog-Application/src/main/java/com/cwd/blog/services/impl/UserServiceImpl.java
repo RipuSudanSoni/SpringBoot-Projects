@@ -1,0 +1,48 @@
+package com.cwd.blog.services.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cwd.blog.payload.UserDto;
+import com.cwd.blog.repositories.UserRepo;
+import com.cwd.blog.services.UserService;
+
+@Service
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	private UserRepo userRepo;
+
+	@Override
+	public UserDto createUser(UserDto user) {
+		return null;
+	}
+
+	@Override
+	public UserDto getUserById(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDto> getAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto updateUser(UserDto userDto, Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteUser(Long userId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

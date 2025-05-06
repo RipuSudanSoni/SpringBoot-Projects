@@ -1,0 +1,12 @@
+package com.example.UserService.Repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.UserService.Entity.User;
+
+public interface UserRepo extends JpaRepository<User, Long> {
+
+	
+	
+	// you can Implement your custom Repo method or query here...
+}

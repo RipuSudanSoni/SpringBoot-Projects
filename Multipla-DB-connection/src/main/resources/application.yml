@@ -1,0 +1,21 @@
+server:
+  port: 8086
+  
+spring:
+  datasource:
+    db1:
+      url: jdbc:mysql://localhost:3306/multi_db
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      
+    db2:
+      url: jdbc:postgresql://localhost:5432/multi_db
+      username: postgresql
+      password: root
+      
+      
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

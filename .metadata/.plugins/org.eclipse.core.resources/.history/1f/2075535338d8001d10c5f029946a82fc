@@ -1,0 +1,16 @@
+package service;
+
+import java.util.List;
+
+import entity.Employee;
+
+
+public interface EmployeeService {
+
+	public Employee createUser(Employee employee);
+	public Employee getUser(Long id);
+	public List<Employee> getAllUser();
+	public Employee updateEmployee(Employee employee, Long id);
+	public String deleteEmployee(Long id);
+	
+}

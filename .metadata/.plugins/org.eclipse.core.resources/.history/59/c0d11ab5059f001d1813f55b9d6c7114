@@ -1,0 +1,3 @@
+server.port=9095
+spring.security.user.name=Ripu
+spring.security.user.password=ripu@123

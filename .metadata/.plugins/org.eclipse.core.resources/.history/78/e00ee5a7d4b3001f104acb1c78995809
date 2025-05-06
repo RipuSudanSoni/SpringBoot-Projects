@@ -1,0 +1,9 @@
+package com.quize.service.quize.seevice.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.quize.service.quize.seevice.entities.Quiz;
+
+public interface QuizRepo extends JpaRepository<Quiz, Long>{
+
+}

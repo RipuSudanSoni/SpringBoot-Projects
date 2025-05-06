@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\eclipse Spring boot project\question-service"/>
+			<item value="D:\eclipse Spring boot project\que"/>
+			<item value="D:\eclipse Spring boot project\quize-seevice"/>
+			<item value="D:\eclipse Spring boot project\JWT-Security-Project"/>
+			<item value="D:\eclipse Spring boot project\Security-Basic-project"/>
+			<item value="D:\eclipse Spring boot project\Validation-Using-Hibernate - Copy"/>
+			<item value="D:\eclipse Spring boot project\JDBC-Plane-project"/>
+			<item value="D:\eclipse Spring boot project\SecuritySpringPro"/>
+			<item value="D:\eclipse Spring boot project\Validation-Using-Hibernate"/>
+			<item value="D:\eclipse Spring boot project\JDBC-boot-Example"/>
+			<item value="D:\eclipse Spring boot project\MicroServicesProject2\api-gatewayEmp"/>
+			<item value="D:\eclipse Spring boot project\MicroServicesProject2\eployee-service"/>
+			<item value="D:\eclipse Spring boot project\MicroServicesProject2\config-server"/>
+			<item value="D:\eclipse Spring boot project\MicroServicesProject2\department-service"/>
+			<item value="D:\eclipse Spring boot project\MicroServicesProject2\eureka-server"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.my.Jwt.test"/>
+		</list>
+		<list key="name">
+			<item value="MyJUnitTestProject"/>
+		</list>
+		<list key="artifactId">
+			<item value="MyJUnitTestProject"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

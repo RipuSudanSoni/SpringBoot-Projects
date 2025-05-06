@@ -1,0 +1,5 @@
+package com.security.myjwt.entity;
+
+public class UserInfo {
+
+}

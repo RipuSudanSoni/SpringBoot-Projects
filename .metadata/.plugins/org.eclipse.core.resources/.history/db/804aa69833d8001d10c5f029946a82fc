@@ -1,0 +1,47 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import entity.Employee;
+import repository.EmployeeRepo;
+
+@Service
+public class EmployeeServiceImpl implements EmployeeService{
+	
+	@Autowired
+	private EmployeeRepo employeeRepo;
+
+	@Override
+	public Employee createUser(Employee employee) {
+		Employee savedEmployee = employeeRepo.save(employee);
+		return savedEmployee;
+	}
+
+	@Override
+	public Employee getUser(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> getAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee updateEmployee(Employee employee, Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteEmployee(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

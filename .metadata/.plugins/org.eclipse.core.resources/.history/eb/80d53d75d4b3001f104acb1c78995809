@@ -1,0 +1,5 @@
+package com.quize.service.quize.seevice.entities;
+
+public class Quiz {
+
+}

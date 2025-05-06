@@ -1,0 +1,43 @@
+package com.lcwd.user.service.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import com.lcwd.user.service.entity.User;
+import com.lcwd.user.service.services.UserService;
+
+@RestController
+@RequestMapping("/rest/api/user")
+public class UserController {
+
+	@Autowired
+	private UserService userService;
+	
+	@PostMapping("/create")
+	public ResponseEntity<User> creatUser(@RequestBody User user) {
+		User createdUser = userService.createUser(user);
+		return new ResponseEntity<User>(createdUser, HttpStatus.CREATED);
+	}
+	
+	@GetMapping("/get/user/{id}")
+	public ResponseEntity<User> getUserById(@PathVariable Long id) {
+		User user = userService.getUserById(id);
+		return new ResponseEntity<User>(user, HttpStatus.OK);
+	}
+	
+	@GetMapping("/getAll/user")
+	public ResponseEntity<List<User>> getAllUsers() {
+		List<User> allUser = userService.getAllUser();
+		return new ResponseEntity<List<User>>(allUser, HttpStatus.OK);
+	}
+	
+	@PutMapping("/update/user/{id}")
+	public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User user) {
+		User updatedUser = userService.updateUser(user, id);
+		return new ResponseEntity<User>(updatedUser, HttpStatus.OK);
+	}
+		
+}

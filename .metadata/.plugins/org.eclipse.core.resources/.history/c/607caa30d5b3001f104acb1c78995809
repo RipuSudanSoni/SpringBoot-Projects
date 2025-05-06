@@ -1,0 +1,16 @@
+package com.quize.service.quize.seevice.service;
+
+import org.springframework.stereotype.Service;
+
+import com.quize.service.quize.seevice.entities.Quiz;
+
+@Service
+public class QuizeService {
+
+	
+	
+	
+	public Quiz saveQuiz(Quiz quiz) {
+		
+	}
+}

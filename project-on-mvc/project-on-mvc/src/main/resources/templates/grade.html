@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+  <body>
+	<h2> Grades </h2>
+	<table id = "table">
+		<tr>
+			<th> Emp </th>
+			<th> Position </th>
+			<th> Score </th>
+		</tr>
+		
+		<tr th:object = "${grade}">
+			<td th:text="*{name}"></td>
+			<td th:text="*{position}"></td>
+			<td th:text="*{score}"></td>
+		</tr>
+	
+	</table>
+  </body>
+</html>

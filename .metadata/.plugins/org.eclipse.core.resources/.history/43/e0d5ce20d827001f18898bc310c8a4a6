@@ -1,0 +1,22 @@
+package com.example.UserService;
+
+import org.hibernate.type.descriptor.jdbc.BigIntJdbcType;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class UserServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UserServiceApplication.class, args);
+		int n = 4;
+		for (int i=1; i<=n; i++) {
+			for (int j = n; j >= n-i; j--) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		System.out.println(">>>>>> User Service Is started........");
+	}
+
+}
