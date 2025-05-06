@@ -1,0 +1,18 @@
+package com.example.Tesing.project.DAO;
+
+
+public class TextResponse {
+    private String encryptedText;
+
+    public TextResponse(String encryptedText) {
+        this.encryptedText = encryptedText;
+    }
+
+    public String getEncryptedText() {
+        return encryptedText;
+    }
+
+    public void setEncryptedText(String encryptedText) {
+        this.encryptedText = encryptedText;
+    }
+}

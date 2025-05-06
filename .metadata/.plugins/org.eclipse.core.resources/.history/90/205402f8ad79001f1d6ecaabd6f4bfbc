@@ -1,0 +1,12 @@
+package demo;
+
+public class Condition {
+	public static void main(String[] args) {
+		int number = 10;
+		if (number > 5) {
+			System.out.println("The number is greater than 5");
+			System.out.println("This print line inside the if block.");
+		}
+		System.out.println("This print line outside the if block.");
+	}
+}

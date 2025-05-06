@@ -1,0 +1,27 @@
+package com.example.scheduling.service;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.scheduling.entity.Logs;
+import com.example.scheduling.repo.LogsRepo;
+
+@Service
+public class LogService {
+
+	@Autowired
+	private LogsRepo logsRepo;
+	
+
+	public Logs createLog(Logs log) {
+		Date date = new Date();
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm dd-MM-yyyy");
+		log.setCreatedAt(date);
+		Logs createdLog = logsRepo.save(log);
+		return createdLog;
+	}
+}

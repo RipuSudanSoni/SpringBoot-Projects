@@ -1,0 +1,13 @@
+package com.example.my.exception.errorResponse;
+
+import java.sql.Date;
+
+public class ApiError {
+
+	private int errorCode;
+	private String errorDesc;
+	private Date date;
+
+	
+	
+}

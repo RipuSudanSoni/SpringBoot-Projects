@@ -1,0 +1,17 @@
+package com.example.my.exception.service;
+import org.springframework.stereotype.Service;
+import com.example.my.exception.entity.Employee;
+import java.util.*;
+
+
+
+@Service
+public class EmpService {
+
+	List<Employee> empList = new ArrayList<>();
+	
+	
+	public Employee getEmpById(int id) {
+		
+	}
+}

@@ -1,0 +1,5 @@
+package com.example.my.exception.errorResponse;
+
+public class ApiResponse {
+
+}

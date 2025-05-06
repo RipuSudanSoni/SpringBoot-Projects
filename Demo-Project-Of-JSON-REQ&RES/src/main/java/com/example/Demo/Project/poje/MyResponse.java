@@ -1,0 +1,28 @@
+package com.example.Demo.Project.poje;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyResponse {
+
+	private int sum;
+	private String msg; 
+	
+	
+	public MyResponse() {
+		
+	}
+	
+	public MyResponse(int sum, String msg) {
+		this.sum = sum;
+		this.msg = msg;
+	}
+	
+	public int getSum() {
+		return sum;
+	}
+	
+	public String getMsg() {
+		return msg;
+	}
+}

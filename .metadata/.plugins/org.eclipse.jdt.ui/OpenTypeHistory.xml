@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <typeInfoHistroy>
     <typeInfo handle="=spring-boot-crud-intellij-main/C:\/Users\/ripusudan.soni\/.m2\/repository\/org\/hibernate\/hibernate-core\/5.4.32.Final\/hibernate-core-5.4.32.Final.jar=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate=/=/maven.artifactId=/hibernate-core=/=/maven.version=/5.4.32.Final=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.hibernate.dialect(MySQL5Dialect.class[MySQL5Dialect" modifiers="33" timestamp="1681209384623"/>
 </typeInfoHistroy>
+=======
+<typeInfoHistroy/>
+>>>>>>> b76ccbf57ad8f146e819ef707cd9eaf829c31dab

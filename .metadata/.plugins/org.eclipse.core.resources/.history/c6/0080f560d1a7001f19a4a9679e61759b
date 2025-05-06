@@ -1,0 +1,12 @@
+package Comprable_Comprator;
+
+import java.util.*;
+
+public class Main {
+	public static void main(String args[]) {
+		List<Integer>list = new ArrayList<>();
+		Integer arr[] = {3,5,16,7,88,9};
+		List<Integer>list2 = Arrays.asList(arr);
+	}
+
+}

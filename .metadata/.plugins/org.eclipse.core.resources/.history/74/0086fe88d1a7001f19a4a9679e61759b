@@ -1,0 +1,10 @@
+package Comprable_Comprator;
+
+import java.util.*;
+
+public class Main {
+	public static void main(String args[]) {
+		List<Emp>empList = new ArrayList<>();
+	}
+
+}

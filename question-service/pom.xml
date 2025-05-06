@@ -8,7 +8,11 @@
 		<version>3.4.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
 	<groupId>com.question.service</groupId>
+=======
+	<groupId>com.example.question</groupId>
+>>>>>>> b76ccbf57ad8f146e819ef707cd9eaf829c31dab
 	<artifactId>question-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>question-service</name>
@@ -32,6 +36,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+<<<<<<< HEAD
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
@@ -49,11 +54,49 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+=======
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!--<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<!--<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.34</version>
+    <scope>provided</scope>
+</dependency>-->
+
+>>>>>>> b76ccbf57ad8f146e819ef707cd9eaf829c31dab
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
+=======
+		
+		<dependency>
+      		<groupId>com.mysql</groupId>
+      		<artifactId>mysql-connector-j</artifactId>
+      		<scope>runtime</scope>
+    	</dependency>
+    	
+    	<dependency>
+      		<groupId>org.springframework.boot</groupId>
+      		<artifactId>spring-boot-starter-data-jpa</artifactId>
+    	</dependency>
+    	
+    	<dependency>
+      		<groupId>org.springframework.boot</groupId>
+      		<artifactId>spring-boot-starter-actuator</artifactId>
+    	</dependency>
+
+>>>>>>> b76ccbf57ad8f146e819ef707cd9eaf829c31dab
 	</dependencies>
 
 	<build>

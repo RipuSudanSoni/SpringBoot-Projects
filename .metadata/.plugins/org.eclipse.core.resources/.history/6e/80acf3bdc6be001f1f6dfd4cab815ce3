@@ -1,0 +1,75 @@
+package com.example.question.question.service.controller;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.question.question.service.entites.Questions;
+import com.example.question.question.service.service.QuestionService;
+
+
+@RestController
+@RequestMapping("/api/v1/question")
+public class QuestionController {
+	
+	Logger logger = LoggerFactory.getLogger(QuestionController.class);
+
+	
+	@Autowired
+	private QuestionService questionService;
+	
+	
+	@PostMapping("/save")
+	public ResponseEntity<Questions> saveQuestion(@RequestBody Questions questions){
+	
+		Questions savedQue = questionService.saveQuestion(questions);
+		return new ResponseEntity<Questions>(savedQue, HttpStatus.CREATED);
+	}
+	
+	
+	@GetMapping("/get/{id}")
+	public ResponseEntity<?> getQuestion(@PathVariable("id") Long id) {
+		Questions question = questionService.getQuestion(id);
+		return new ResponseEntity<>(question, HttpStatus.OK);
+	}
+
+	@GetMapping("/get/by/quizeId/{quizeId}")
+	public ResponseEntity<?> getQuestionsOfQuize(@PathVariable Long quizeId) {
+		logger.info("from controller class quizeId = {}",quizeId);
+		List<Questions> questions =  questionService.getAlListQuestionsOfQuize(quizeId);
+		return new ResponseEntity<List<Questions>>(questions, HttpStatus.OK);
+	}
+	
+	@GetMapping("/getAll")
+	public ResponseEntity<?> getAllQuestions() {
+		return new ResponseEntity<>(questionService.getAllQuestions(), HttpStatus.OK);
+		
+	}
+	
+	
+	@PutMapping("/update/{queId}")
+	public ResponseEntity<?> updateQuestion(@PathVariable Long queId, @RequestBody Questions questions) {
+		Questions updatedQuestion = questionService.updateQuestions(queId, questions);
+		return new ResponseEntity<>(updatedQuestion, HttpStatus.OK);
+		
+	}
+	
+	@DeleteMapping("/delete/{quesionId}")
+	public ResponseEntity<?> deleteQues(@PathVariable Long questionId) {
+		return new ResponseEntity<>(questionService.deleteQuestion(questionId), HttpStatus.OK);
+	}
+	
+}

@@ -1,0 +1,29 @@
+package com.example.demo.Example.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.Example.entity.Employee;
+import com.example.demo.Example.repo.EmpRepo;
+
+@Service
+public class EmpService {
+
+	
+	
+	@Autowired
+	private EmpRepo empRepo;
+	
+	
+	
+	public Employee saveEmp(Employee emp){
+		return empRepo.save(emp);
+	}
+	
+	
+	public List<Employee> getAllEmp(){
+		return empRepo.findAll();
+	}
+}
